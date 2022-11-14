@@ -1,4 +1,5 @@
    import 'package:admin_panel/addproduct.dart';
+import 'package:admin_panel/deleteproduct.dart';
 import 'package:admin_panel/drawer.dart';
 import 'package:flutter/material.dart';
 
@@ -78,6 +79,13 @@ class MyHomePage extends StatelessWidget {
                   InkWell(
                     child: Icon(Icons.delete , size: 60,),
                     onTap: (){
+                       Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) =>
+              deleteproduct(),
+        ),
+      );
                        
                     },
                   ),
