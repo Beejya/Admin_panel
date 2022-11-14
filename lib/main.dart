@@ -1,4 +1,5 @@
-   import 'package:admin_panel/drawer.dart';
+   import 'package:admin_panel/addproduct.dart';
+import 'package:admin_panel/drawer.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(const MyApp());
@@ -51,6 +52,13 @@ class MyHomePage extends StatelessWidget {
                   InkWell(
                     child: Icon(Icons.add,size: 60,),
                     onTap: (){
+                      Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) =>
+              addproduct(),
+        ),
+      );
                        
                     },
                   ),
